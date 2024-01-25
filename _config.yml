@@ -17,43 +17,35 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: andrius d. ILGŪNAS
-fname: Andrius
-mname: D
-lname: Ilgūnas
-domain: andrius-d-ilgunas.github.io
-
-email: your-email
+# Ū
+title: " "
+fname: andrius
+mname: d
+lname: ilgūnas
+email:
 description: >- # this means to ignore newlines until "baseurl:"
   Protean IT professional offering a unique blend of
-  7 years of varsity-level Python Development and over
-  15 years of advanced Linux Administration, specializing in systems automation.
+  15 years of advanced Linux Engineering and
+  over 7 years experience of varsity-level Python Development, expert in
+  developing and maintaining high-performance and robust software systems,
+  specializing in systems automation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andrius-d-ilgunas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
+domain: andrius-d-ilgunas.github.io
+show_downloads: false   #or "true" (unquoted) to indicate whether to provide a download URL]
+google_analytics:
 
 # Build settings
-#theme: minima
-theme: jekyll-theme-midnight
+theme: minima
+# theme:  jekyll-theme-midnight
+# theme:  jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
-
+# remote_theme: pages-themes/midnight@v0.2.0
 plugins:
   # - jekyll-feed
   - jekyll-remote-theme # add this line to the plugins list if you already have one
-
-lsi: false
-safe: true
-source: /
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
