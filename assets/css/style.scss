@@ -3,18 +3,46 @@
 
 @import "{{ site.theme }}";
 
+
+
+.topside{
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
 header h1:before{
   font-size: 42px;
 
 }
+
+header {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px dashed #03ffeb;
+    padding: 20px 0;
+    margin: 0 0 40px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color: #03ffeb;
+    letter-spacing: -0.03em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+}
+
 
 #a-title > h1 > span.fname,
 #a-title > h1 > span.mname,
 #a-title > h1 > span.lname,
 header h1{
   color: #03ffeb;
-  // font: 400 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-family: Courier, monospace;
+  font: 400 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  // font-family: Courier, monospace;
   font-size: 42px;
   font-weight: 300;
   line-height: 54px;
@@ -24,10 +52,84 @@ header h1{
 
 header h2{
   color: #cad1cf;
-  font-family: Courier, monospace;
+  // font-family: Courier, monospace;
 }
 
 #a-title > h1 > span.lname{
   font-weight: 800;
   text-transform: uppercase;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.adi-button {
+    background: linear-gradient(145deg, hsla(240, 2%, 40%, 0.15) 15%, rgba(33, 33, 33, 0.4) 80%);
+    box-shadow: -4px -3px 2px 0 hsla(0, 0%, 98%, 0.13), 4px 4px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.adi-card {
+    box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
+}
+.adi-card-big {
+    box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+}
+
+
+.project {
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+}
+.project .name-link-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.project .name-link-wrapper .links {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+}
+.project-desc {
+    line-height: 1rem;
+}
+.project-stars-forks {
+    fill: #fff;
+    font-family: Josefin Sans, sans-serif;
+}
+.tag-wrapper {
+    margin: 1rem 0 0;
+}
+.tag {
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+}
+@media only screen and (min-width: 48em) {
+    .projects-wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .projects-wrapper > * {
+        width: 44%;
+    }
+}
+@media only screen and (min-width: 62em) {
+    .projects-wrapper > * {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 75em) {
+    .projects-wrapper > * {
+        width: 46%;
+    }
 }

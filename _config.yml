@@ -37,6 +37,9 @@ domain: andrius-d-ilgunas.github.io
 show_downloads: false   #or "true" (unquoted) to indicate whether to provide a download URL]
 google_analytics:
 
+show_os_projects: true
+os_projects_title: GitHub Projects
+
 # Build settings
 theme: minima
 # theme:  jekyll-theme-midnight

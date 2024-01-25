@@ -1,0 +1,86 @@
+
+<header>
+  <div id="landing">
+    <div class="landing-title">
+      <a id="a-title" href="{{ '/' | relative_url }}">
+        <h1>{{ site.title | default: site.github.repository_name }}<span class='title'>{{ site.title | default: site.github.repository_name }}</span> <span class='fname'>{{ site.fname }}</span>.<span class='mname'>{{ site.mname }}</span>.<span class='lname'>{{ site.lname }}</span></h1>
+      </a>
+      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      <img class='logo' src="/assets/images/ADI.png">
+      <div class="landing-icons">
+
+        {% if site.github_username != null %}
+          <a class="social-link" aria-label="My GitHub" target="_blank" rel="noreferrer"
+            href="https://github.com/{{site.github_username}}"
+          >
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#github" | prepend: site.baseurl }}"></use>
+              </svg>
+            </div>
+            <span class="label">GitHub</span>
+          </a>
+        {% endif %}
+
+        {% if site.linkedin_username != null %}
+          <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank"
+            rel="noreferrer" href="https://www.linkedin.com/in/{{site.linkedin_username}}"
+          >
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#linkedin-in" | prepend: site.baseurl }}"></use>
+              </svg>
+            </div>
+            <span class="label">LinkedIn</span>
+          </a>
+        {% endif %}
+
+        {% if site.twitter_username != null %}
+          <a class="social-link twitter" aria-label="My Twitter" target="_blank"
+            rel="noreferrer" href="https://twitter.com/{{site.twitter_username}}"
+          >
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#twitter" | prepend: site.baseurl }}"></use>
+              </svg>
+            </div>
+            <span class="label">Twitter</span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+
+
+
+    <!-- <a href="" class="down-arrow" > </a> -->
+
+
+
+
+
+
+
+
+
+  <div class="arrow-container animated fadeInDown">
+    <div class="arrow-2">
+      <i class="fa fa-angle-down"></i>
+    </div>
+    <div class="arrow-1 animated hinge infinite zoomIn"></div>
+  </div>
+
+
+
+
+  </div>
+</header>

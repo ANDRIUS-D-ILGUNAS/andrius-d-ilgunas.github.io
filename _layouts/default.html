@@ -13,13 +13,15 @@
   <body>
 
     <header>
-      <div class="container">
+      <div class="topside">
         <a id="a-title" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}<span class='title'>{{ site.title | default: site.github.repository_name }}</span> <span class='fname'>{{ site.fname }}</span> <span class='mname'>{{ site.mname }}</span> <span class='lname'>{{ site.lname }}</span>
 </h1>
 
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+        <img src="/assets/images/ADI.png" >
 
         <section id="downloads">
           {% if site.show_downloads %}
@@ -28,12 +30,22 @@
           {% endif %}
           <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
+
+        <p><br /></p>
+        <p><br /></p>
+        <p><br /></p>
+        <p><br /></p>
+        <p><br /></p>
+        <p><br /></p>
       </div>
+
+
     </header>
 
     <div class="container">
       <section id="main_content">
         {{ content }}
+        {% include section-projects.html %}
       </section>
     </div>
   </body>

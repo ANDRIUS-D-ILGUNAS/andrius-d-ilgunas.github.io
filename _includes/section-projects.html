@@ -1,0 +1,43 @@
+{% if site.show_os_projects %}
+  <h1 class="title">{{site.os_projects_title}}</h1>
+  {% if site.projects.sort_by == 'stars' %}
+    {% assign sort_order = 'stargazers_count', 'last' %}
+  {% else %}
+    {% assign sort_order = 'pushed_at' %}
+  {% endif %}
+
+  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.archived %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% else %}
+    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+  {% endif %}
+
+  <div class="projects-wrapper">
+    {% for repository in filtered_repos %}
+      {% unless site.projects.exclude.projects contains repository.name %}
+        {% if repository.archived == false %}
+          <div class="project adi-card" data-aos="zoom-in-down">
+            <div class="name-link-wrapper">
+              <h3><a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
+              {{ repository.name }}
+            </a>
+              </h3>
+            </div>
+            <p class="project-desc">{{repository.description}}</p>
+            {% if repository.topics %}
+              <div class="tag-wrapper">
+                {% for topic in repository.topics %}
+                  <span class="tag adi-card">{{topic}}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          {% endif %} <!-- repository.archived == false %} -->
+      {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}
