@@ -68,11 +68,20 @@ header h2{
   // font-family: Courier, monospace;
 }
 
-#a-title > h1 > span.lname{
+#a-title > h1 > span.myname{
+  letter-spacing: 9px;
+  word-spacing: 20px;
+}
+#a-title > h1 > span.fname{
   font-weight: 800;
+}
+#a-title > h1 > span.fname{
+  text-transform: capitalize;
+}
+#a-title > h1 > span.mname,
+#a-title > h1 > span.lname{
   text-transform: uppercase;
 }
-
 img {
   display: block;
   margin-left: auto;
