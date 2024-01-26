@@ -51,16 +51,16 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
   - "jekyll-github-metadata"
 
-# lsi: false
-# safe: true
-# source: /
-# incremental: false
-# highlighter: rouge
-# gist:
-#   noscript: false
-# kramdown:
-#   math_engine: mathjax
-#   syntax_highlighter: rouge
+lsi: false
+safe: true
+source: /
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 
 # Exclude from processing.
