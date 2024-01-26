@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # Ū
-title: " "
+title: "T3KN0KRAT "
 fname: andrius
 mname: d
 lname: ilgūnas
@@ -51,16 +51,16 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
   - "jekyll-github-metadata"
 
-lsi: false
-safe: true
-source: /
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+# lsi: false
+# safe: true
+# source: /
+# incremental: false
+# highlighter: rouge
+# gist:
+#   noscript: false
+# kramdown:
+#   math_engine: mathjax
+#   syntax_highlighter: rouge
 
 
 # Exclude from processing.

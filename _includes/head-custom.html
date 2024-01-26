@@ -1,12 +1,15 @@
 <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+    <meta charset='utf-8'>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
 <!-- Setup theme-color -->
 {% include head-custom-theme-colors.html %}
 
-<!-- Setup Google Analytics -->
-{% include head-custom-google-analytics.html %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
-
+  <title>{{ site.title | default: site.github.repository_name }}</title>
 <!-- end custom head snippets -->
